@@ -1,0 +1,65 @@
+/*---------------------------------Header with sticky property----------------------------*/
+
+.page-header{
+	background: #454140;
+	color: white;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.sticky + .content {
+  padding-top: 102px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+#mainTitle{
+ margin: 10px 0px 0px 10px;
+ padding: 10px;
+
+}
+#subTitle{
+ margin: 0px 0px 0px 20px;
+ padding: 5px;
+}
+/*-----------------------------------------------------------------------------------*/
+.glyphicon-fire{
+	color: red;
+	padding: 0px 10px 0px 0px ;
+}
+
+.jumbotron{
+	background: #454140;
+	color: white;
+}
+
+.container-fluid {
+	background: #454140;
+	color: white;
+}
+.questions {
+	background: #454140;
+	color: white;
+	margin:10px;
+	border: round;
+}
+
+body {
+	background: #b2b2b2;
+}
+h3 {
+	margin: 10px;
+}
+
+#radiobtn{
+	margin: 10px;
+}
+h2 {
+	margin: 10px;
+}
+
