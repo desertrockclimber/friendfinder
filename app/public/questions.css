@@ -3,10 +3,11 @@
 .page-header{
 	background: #454140;
 	color: white;
+	padding: 10px 16px;
 }
 .sticky {
   position: fixed;
-  top: 0;
+  margin-top: 0;
   width: 100%
 }
 .sticky + .content {
@@ -14,7 +15,7 @@
 }
 .sticky {
   position: fixed;
-  top: 0;
+  margin-top: 0;
   width: 100%
 }
 
@@ -63,3 +64,11 @@ h2 {
 	margin: 10px;
 }
 
+#question1{
+	padding-top: 0px;
+	margin-top: 50px;
+}
+
+#surveyHeader{
+	background: #b2b2b2;
+}

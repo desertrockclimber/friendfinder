@@ -13,21 +13,33 @@
 
 </head>
 <body>
-	<div class = "container">
-	<div class="page-header">
-  	<h1 id= "mainTitle"><i class="glyphicon glyphicon-fire" aria-hidden="true"></i>Friend Finder Questionnaire</h1><h4 id = "subTitle">Answer the questions, then click submit at the end to find out with whom you are most compatible.</h4></h1>
-	</div>
-	</div>	
-	<div class = container>
-		<nav class="navbar navbar-default">
-		  	<div class="container-fluid">
-			    <div class="navbar-header">
-		      		
-		        	<span><h3>To what extent do you agree or disagree with the following statements?</h3></span>
-		      		
-	    		</div>
-  			</div>
-		</nav>
+	<div id = "surveyHeader">
+		<div class = "container">
+			<div class="page-header">
+		  	<h1 id= "mainTitle"><i class="glyphicon glyphicon-fire" aria-hidden="true"></i>Friend Finder Questionnaire</h1><h4 id = "subTitle">Answer the questions, then click submit at the end to find out with whom you are most compatible.</h4></h1>
+			</div>
+		</div>
+		<div class = "container">
+			<div class = "questions">
+				<div class="input-group">
+				  <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-user" aria-hidden="true"></i> Name:</span>
+				  <input type="text" class="form-control" placeholder="Full Name (REQUIRED)" aria-describedby="basic-addon1">
+				  <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-camera" aria-hidden="true"></i> Photo:</span>
+				  <input type="text" class="form-control" placeholder="Link to photo image (REQUIRED)" aria-describedby="basic-addon1">
+				</div>
+			</div>
+		</div>			
+		<div class = "container">
+			<nav class="navbar navbar-default">
+			  	<div class="container-fluid">
+				    <div class="navbar-header">
+			      		
+			        	<span><h3>To what extent do you agree or disagree with the following statements?</h3></span>
+			      		
+		    		</div>
+	  			</div>
+			</nav>
+		</div>
 	</div>	
 	<div class = "container">
 			<div class = "questions" id = "question1">
@@ -209,6 +221,7 @@
 				</div>	
 			</footer>
 			<br>		
-	</div>	
+	</div>
+	<script src="../routing/htmlRoutes.js"></script>
 </body>
 </html>
