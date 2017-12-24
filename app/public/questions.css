@@ -10,7 +10,7 @@
   margin-top: 0;
   width: 100%
 }
-.sticky + .content {
+.sticky + .questions {
   padding-top: 102px;
 }
 .sticky {

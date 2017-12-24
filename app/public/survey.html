@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	
+	
 	<meta charset = "UTF-8">
 	<title>Friend Finder</title>
 	<!-- Latest compiled and minified CSS -->
@@ -9,7 +11,7 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-<link rel ="stylesheet" type ="text/css" href = "questions.css">
+<link rel ="stylesheet" type ="text/css" href = "http://localhost/friendfinder/app/public/questions.css">
 
 </head>
 <body>
@@ -23,9 +25,9 @@
 			<div class = "questions">
 				<div class="input-group">
 				  <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-user" aria-hidden="true"></i> Name:</span>
-				  <input type="text" class="form-control" placeholder="Full Name (REQUIRED)" aria-describedby="basic-addon1">
+				  <input type="text" class="form-control" required placeholder="Full Name (REQUIRED)" aria-describedby="basic-addon1">
 				  <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-camera" aria-hidden="true"></i> Photo:</span>
-				  <input type="text" class="form-control" placeholder="Link to photo image (REQUIRED)" aria-describedby="basic-addon1">
+				  <input type="text" class="form-control" required placeholder="Link to photo image (REQUIRED)" aria-describedby="basic-addon1">
 				</div>
 			</div>
 		</div>			
@@ -43,7 +45,7 @@
 	</div>	
 	<div class = "container">
 			<div class = "questions" id = "question1">
-				<form action="">
+				<form action="" class = "chosen-select">
 				<ul class = "nav nav-pills">	
 					<h2>Q1. Your mind is always buzzing with unexplored ideas and plans.</h2>
 					<h4>
@@ -60,8 +62,8 @@
 			</div>
 			<br>
 			<div class = "questions" id = "question2">
-				<form action="">
-				<ul class = "nav nav-pills">	
+				<form action="" class = "chosen-select">
+				<ul class = "nav nav-pills" >	
 					<h2>Q2. Generally speaking, you rely more on your experience than your imagination.</h2>
 					<h4>
 				  <input id = "radiobtn" type="radio" name="gender" value="1"> 1 - Strongly agree<br>
@@ -77,7 +79,7 @@
 			</div>
 			<br>
 			<div class = "questions" id = "question3">
-				<form action="">
+				<form action="" class = "chosen-select">
 				<ul class = "nav nav-pills">	
 					<h2>Q3. You find it easy to stay relaxed and focused even when there is some pressure.</h2>
 					<h4>
@@ -94,7 +96,7 @@
 			</div>
 			<br>
 			<div class = "questions" id = "question4">
-				<form action="">
+				<form action="" class = "chosen-select">
 				<ul class = "nav nav-pills">	
 					<h2>Q4. You rarely do something just out of sheer curiosity.</h2>
 					<h4>
@@ -111,7 +113,7 @@
 			</div>
 			<br>
 			<div class = "questions" id = "question5">
-				<form action="">
+				<form action="" class = "chosen-select">
 				<ul class = "nav nav-pills">	
 					<h2>Q5. People can rarely upset you.</h2>
 					<h4>
@@ -128,7 +130,7 @@
 			</div>
 			<br>
 			<div class = "questions" id = "question36>
-				<form action="">
+				<form action="" class = "chosen-select">
 				<ul class = "nav nav-pills">	
 					<h2>Q6. It is often difficult for you to relate to other people’s feelings.</h2>
 					<h4>
@@ -145,7 +147,7 @@
 			</div>
 			<br>
 			<div class = "questions" id = "question7">
-				<form action="">
+				<form action="" class = "chosen-select">
 				<ul class = "nav nav-pills">	
 					<h2>Q7. In a discussion, truth should be more important than people’s sensitivities.</h2>
 					<h4>
@@ -162,7 +164,7 @@
 			</div>
 			<br>
 			<div class = "questions" id = "question8">
-				<form action="">
+				<form action="" class = "chosen-select">
 				<ul class = "nav nav-pills">	
 					<h2>Q8. You rarely get carried away by fantasies and ideas.</h2>
 					<h4>
@@ -179,7 +181,7 @@
 			</div>
 			<br>
 			<div class = "questions" id = "question9">
-				<form action="">
+				<form action="" class = "chosen-select">
 				<ul class = "nav nav-pills">	
 					<h2>Q9. You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h2>
 					<h4>
@@ -196,7 +198,7 @@
 			</div>
 			<br>
 			<div class = "questions" id = "question10">
-				<form action="">
+				<form action="" class = "chosen-select">
 				<ul class = "nav nav-pills">	
 					<h2>Q10. You feel more energetic after spending time with a group of people.</h2>
 					<h4>
@@ -220,8 +222,99 @@
 					<a href="/api/friends">API Friends List</a> | <a href="https://github.com/desertrockclimber/friendfinder">GitHub Repo</a>
 				</div>	
 			</footer>
-			<br>		
+			<br>
+			<div id = "resultsModal" class="modal fade" role="dialog">
+				<div class = "modal-dialog">
+					<div class = "modal-content">
+						<div class = "modal-header">
+							<button type = "button" class = "close" data-dismiss="modal">5times:</button>
+							<h2 class = "modal-title"><strong>Best Match</strong></h2>
+						</div>
+						<div class = "modal-body">
+							<h2 id = "matchName"></h2>
+							<img id="matchImg" src = "">
+						</div>
+						<div class = "modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
 	</div>
-	<script src="../routing/htmlRoutes.js"></script>
+	<script type = "text/javascript">
+	// <!-- <script src="../routing/htmlRoutes.js"> -->
+		console.log("page loaded");
+	
+		$("#submit").click(function() {
+			console.log("Form Submitted");
+			function validateForm() {
+				var isValid = true;
+				$(".form-control").each(function(){
+					if($(this).val()==="") {
+						isValid=false;
+					}
+				});
+				$(".chosen-select").each(function(){
+					if($(this).val() ==="") {
+						isValid=false;
+					}
+				});
+				return isValid;
+				console.log("isValid works");
+			}
+
+			if (validateForm()) {
+				var userData = {
+					name: ("#name").val(),
+					photo: ("#photo").val(),
+					scores: [
+						$("#question1").val(),
+						$("#question2").val(),
+						$("#question3").val(),
+						$("#question4").val(),
+						$("#question5").val(),
+						$("#question6").val(),
+						$("#question7").val(),
+						$("#question8").val(),
+						$("#question9").val(),
+						$("#question10").val()
+
+					]
+				};
+
+				var currentURL = window.location.origin;
+
+				$.post(currentURL = "/api/friends", userData, function(data) {
+					console.log("working");
+
+				});
+			}
+
+		});
+// __________________________________Sticky Header________________________________________________
+		// When the user scrolls the page, execute myFunction 
+			// window.onscroll = function() {myFunction()};
+
+			// // Get the header
+			// var header = document.getElementById("surveyHeader");
+
+			// // Get the offset position of the navbar
+			// var sticky = header.offsetTop;
+
+			// // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+			// function myFunction() {
+			//   if (window.pageYOffset >= sticky) {
+			//     header.classList.add("sticky");
+			//   } else {
+			//     header.classList.remove("sticky");
+			//   };
+			// };
+// --------------------------------End Sticky Header------------------------------------------------------------------
+
+
+
+	</script>
+
 </body>
 </html>
