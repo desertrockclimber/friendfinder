@@ -25,9 +25,9 @@
 			<div class = "questions">
 				<div class="input-group">
 				  <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-user" aria-hidden="true"></i> Name:</span>
-				  <input type="text" class="form-control" required placeholder="Full Name (REQUIRED)" aria-describedby="basic-addon1">
+				  <input type="text" class="form-control" id="name" required placeholder="Full Name (REQUIRED)" aria-describedby="basic-addon1">
 				  <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-camera" aria-hidden="true"></i> Photo:</span>
-				  <input type="text" class="form-control" required placeholder="Link to photo image (REQUIRED)" aria-describedby="basic-addon1">
+				  <input type="text" class="form-control" id="photo" required placeholder="Link to photo image (REQUIRED)" aria-describedby="basic-addon1">
 				</div>
 			</div>
 		</div>			
@@ -44,175 +44,135 @@
 		</div>
 	</div>	
 	<div class = "container">
-			<div class = "questions" id = "question1">
-				<form action="" class = "chosen-select">
-				<ul class = "nav nav-pills">	
-					<h2>Q1. Your mind is always buzzing with unexplored ideas and plans.</h2>
-					<h4>
-				  <input id = "radiobtn" type="radio" name="gender" value="1"> 1 - Strongly agree<br>
-				  <input id = "radiobtn" type="radio" name="gender" value="2"> 2<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="3"> 3<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="4"> 4<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="5"> 5 - Strongly disagree<br>
-				</h4>
-				</ul>
 				
-				</form>
-
-			</div>
+				<h2>Q1. Your mind is always buzzing with unexplored ideas and plans.</h2>
+					<select data-placeholder="" class="chosen-select" id="q1">
+						<h4>
+						  <option value="1"> 1 - Strongly agree</option>
+						  <option value="2"> 2</option>
+						  <option value="3"> 3</option>
+						  <option value="4"> 4</option>
+						  <option value="5"> 5 - Strongly disagree</option>
+						</h4>
+					</select>	
+				
 			<br>
-			<div class = "questions" id = "question2">
-				<form action="" class = "chosen-select">
-				<ul class = "nav nav-pills" >	
+				
 					<h2>Q2. Generally speaking, you rely more on your experience than your imagination.</h2>
-					<h4>
-				  <input id = "radiobtn" type="radio" name="gender" value="1"> 1 - Strongly agree<br>
-				  <input id = "radiobtn" type="radio" name="gender" value="2"> 2<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="3"> 3<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="4"> 4<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="5"> 5 - Strongly disagree<br>
-				</h4>
-				</ul>
+					<select data-placeholder="" class="chosen-select" id="q2">
+						<h4>
+						  <option value="1"> 1 - Strongly agree</option>
+						  <option value="2"> 2</option>
+						  <option value="3"> 3</option>
+						  <option value="4"> 4</option>
+						  <option value="5"> 5 - Strongly disagree</option>
+						</h4>
+					</select>	
 				
-				</form>
-
-			</div>
 			<br>
-			<div class = "questions" id = "question3">
-				<form action="" class = "chosen-select">
-				<ul class = "nav nav-pills">	
+				
 					<h2>Q3. You find it easy to stay relaxed and focused even when there is some pressure.</h2>
-					<h4>
-				  <input id = "radiobtn" type="radio" name="gender" value="1"> 1 - Strongly agree<br>
-				  <input id = "radiobtn" type="radio" name="gender" value="2"> 2<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="3"> 3<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="4"> 4<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="5"> 5 - Strongly disagree<br>
-				</h4>
-				</ul>
-				
-				</form>
-
-			</div>
+					<select data-placeholder="" class="chosen-select" id="q3">
+						<h4>
+						  <option value="1"> 1 - Strongly agree</option>
+						  <option value="2"> 2</option>
+						  <option value="3"> 3</option>
+						  <option value="4"> 4</option>
+						  <option value="5"> 5 - Strongly disagree</option>
+						</h4>
+					</select>	
+			
 			<br>
-			<div class = "questions" id = "question4">
-				<form action="" class = "chosen-select">
-				<ul class = "nav nav-pills">	
+			
 					<h2>Q4. You rarely do something just out of sheer curiosity.</h2>
-					<h4>
-				  <input id = "radiobtn" type="radio" name="gender" value="1"> 1 - Strongly agree<br>
-				  <input id = "radiobtn" type="radio" name="gender" value="2"> 2<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="3"> 3<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="4"> 4<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="5"> 5 - Strongly disagree<br>
-				</h4>
-				</ul>
+					<select data-placeholder="" class="chosen-select" id="q4">
+						<h4>
+						  <option value="1"> 1 - Strongly agree</option>
+						  <option value="2"> 2</option>
+						  <option value="3"> 3</option>
+						  <option value="4"> 4</option>
+						  <option value="5"> 5 - Strongly disagree</option>
+						</h4>
+					</select>	
 				
-				</form>
-
-			</div>
 			<br>
-			<div class = "questions" id = "question5">
-				<form action="" class = "chosen-select">
-				<ul class = "nav nav-pills">	
+			
 					<h2>Q5. People can rarely upset you.</h2>
-					<h4>
-				  <input id = "radiobtn" type="radio" name="gender" value="1"> 1 - Strongly agree<br>
-				  <input id = "radiobtn" type="radio" name="gender" value="2"> 2<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="3"> 3<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="4"> 4<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="5"> 5 - Strongly disagree<br>
-				</h4>
-				</ul>
+					<select data-placeholder="" class="chosen-select" id="q5">
+						<h4>
+						  <option value="1"> 1 - Strongly agree</option>
+						  <option value="2"> 2</option>
+						  <option value="3"> 3</option>
+						  <option value="4"> 4</option>
+						  <option value="5"> 5 - Strongly disagree</option>
+						</h4>
+					</select>	
 				
-				</form>
-
-			</div>
 			<br>
-			<div class = "questions" id = "question36>
-				<form action="" class = "chosen-select">
-				<ul class = "nav nav-pills">	
+				
 					<h2>Q6. It is often difficult for you to relate to other people’s feelings.</h2>
-					<h4>
-				  <input id = "radiobtn" type="radio" name="gender" value="1"> 1 - Strongly agree<br>
-				  <input id = "radiobtn" type="radio" name="gender" value="2"> 2<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="3"> 3<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="4"> 4<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="5"> 5 - Strongly disagree<br>
-				</h4>
-				</ul>
+					<select data-placeholder="" class="chosen-select" id="q6">
+						<h4>
+						  <option value="1"> 1 - Strongly agree</option>
+						  <option value="2"> 2</option>
+						  <option value="3"> 3</option>
+						  <option value="4"> 4</option>
+						  <option value="5"> 5 - Strongly disagree</option>
+						</h4>
+					</select>	
 				
-				</form>
-
-			</div>
 			<br>
-			<div class = "questions" id = "question7">
-				<form action="" class = "chosen-select">
-				<ul class = "nav nav-pills">	
+			
 					<h2>Q7. In a discussion, truth should be more important than people’s sensitivities.</h2>
-					<h4>
-				  <input id = "radiobtn" type="radio" name="gender" value="1"> 1 - Strongly agree<br>
-				  <input id = "radiobtn" type="radio" name="gender" value="2"> 2<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="3"> 3<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="4"> 4<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="5"> 5 - Strongly disagree<br>
-				</h4>
-				</ul>
+					<select data-placeholder="" class="chosen-select" id="q7">
+						<h4>
+						  <option value="1"> 1 - Strongly agree</option>
+						  <option value="2"> 2</option>
+						  <option value="3"> 3</option>
+						  <option value="4"> 4</option>
+						  <option value="5"> 5 - Strongly disagree</option>
+						</h4>
+					</select>	
 				
-				</form>
-
-			</div>
 			<br>
-			<div class = "questions" id = "question8">
-				<form action="" class = "chosen-select">
-				<ul class = "nav nav-pills">	
+				
 					<h2>Q8. You rarely get carried away by fantasies and ideas.</h2>
-					<h4>
-				  <input id = "radiobtn" type="radio" name="gender" value="1"> 1 - Strongly agree<br>
-				  <input id = "radiobtn" type="radio" name="gender" value="2"> 2<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="3"> 3<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="4"> 4<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="5"> 5 - Strongly disagree<br>
-				</h4>
-				</ul>
+					<select data-placeholder="" class="chosen-select" id="q8">
+						<h4>
+						  <option value="1"> 1 - Strongly agree</option>
+						  <option value="2"> 2</option>
+						  <option value="3"> 3</option>
+						  <option value="4"> 4</option>
+						  <option value="5"> 5 - Strongly disagree</option>
+						</h4>
+					</select>	
 				
-				</form>
-
-			</div>
 			<br>
-			<div class = "questions" id = "question9">
-				<form action="" class = "chosen-select">
-				<ul class = "nav nav-pills">	
+				
 					<h2>Q9. You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h2>
-					<h4>
-				  <input id = "radiobtn" type="radio" name="gender" value="1"> 1 - Strongly agree<br>
-				  <input id = "radiobtn" type="radio" name="gender" value="2"> 2<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="3"> 3<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="4"> 4<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="5"> 5 - Strongly disagree<br>
-				</h4>
-				</ul>
+					<select data-placeholder="" class="chosen-select" id="q9">
+						<h4>
+						  <option value="1"> 1 - Strongly agree</option>
+						  <option value="2"> 2</option>
+						  <option value="3"> 3</option>
+						  <option value="4"> 4</option>
+						  <option value="5"> 5 - Strongly disagree</option>
+						</h4>
+					</select>	
 				
-				</form>
-
-			</div>
 			<br>
-			<div class = "questions" id = "question10">
-				<form action="" class = "chosen-select">
-				<ul class = "nav nav-pills">	
-					<h2>Q10. You feel more energetic after spending time with a group of people.</h2>
-					<h4>
-				  <input id = "radiobtn" type="radio" name="gender" value="1"> 1 - Strongly agree<br>
-				  <input id = "radiobtn" type="radio" name="gender" value="2"> 2<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="3"> 3<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="4"> 4<br>
-				  <input id = "radiobtn"  type="radio" name="gender" value="5"> 5 - Strongly disagree<br>
-				</h4>
-				</ul>
 				
-				</form>
-
-			</div>
+					<h2>Q10. You feel more energetic after spending time with a group of people.</h2>
+					<select data-placeholder="" class="chosen-select" id="q10">
+						<h4>
+						  <option value="1"> 1 - Strongly agree</option>
+						  <option value="2"> 2</option>
+						  <option value="3"> 3</option>
+						  <option value="4"> 4</option>
+						  <option value="5"> 5 - Strongly disagree</option>
+						</h4>
+					</select>	
+				
 			<br>	
 			<button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
      		Submit</button>
@@ -245,7 +205,7 @@
 	<script type = "text/javascript">
 	// <!-- <script src="../routing/htmlRoutes.js"> -->
 		console.log("page loaded");
-	
+		// $(document).ready(function(){
 		$("#submit").on("click", function() {
 			console.log("Form Submitted");
 			function validateForm() {
@@ -258,35 +218,39 @@
 				$(".chosen-select").each(function(){
 					if($(this).val() ==="") {
 						isValid=false;
+						console.log("isValid broken");
 					}
 				});
 				return isValid;
 				console.log("isValid works");
 			}
 
+
 			if (validateForm()) {
 				var userData = {
-					name: ("#name").val(),
-					photo: ("#photo").val(),
+					name: $("#name").val(),
+					photo: $("#photo").val(),
 					scores: [
-						$("#question1").val(),
-						$("#question2").val(),
-						$("#question3").val(),
-						$("#question4").val(),
-						$("#question5").val(),
-						$("#question6").val(),
-						$("#question7").val(),
-						$("#question8").val(),
-						$("#question9").val(),
-						$("#question10").val()
+						$("#q1").val(),
+						$("#q2").val(),
+						$("#q3").val(),
+						$("#q4").val(),
+						$("#q5").val(),
+						$("#q6").val(),
+						$("#q7").val(),
+						$("#q8").val(),
+						$("#q9").val(),
+						$("#q10").val()
 
 					]
 				};
 
 				var currentURL = window.location.origin;
-				console.log("userData");
+				console.log(userData);
 				$.post(currentURL + "/api/friends", userData, function(data) {
 					console.log("working");
+					alert("working");
+					
 
 				});
 			}

@@ -45,7 +45,7 @@
 }
 .questions {
 	background: #454140;
-	color: white;
+	color: black;
 	margin:10px;
 	border: round;
 }
@@ -62,6 +62,7 @@ h3 {
 }
 h2 {
 	margin: 10px;
+	color: white;
 }
 
 #question1{
