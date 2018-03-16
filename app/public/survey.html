@@ -11,7 +11,7 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-<link rel ="stylesheet" type ="text/css" href = "http://localhost/friendfinder/app/public/questions.css">
+<link rel ="stylesheet" type ="text/css" href="/questions.css">
 
 </head>
 <body>
@@ -246,7 +246,7 @@
 	// <!-- <script src="../routing/htmlRoutes.js"> -->
 		console.log("page loaded");
 	
-		$("#submit").click(function() {
+		$("#submit").on("click", function() {
 			console.log("Form Submitted");
 			function validateForm() {
 				var isValid = true;
@@ -284,8 +284,8 @@
 				};
 
 				var currentURL = window.location.origin;
-
-				$.post(currentURL = "/api/friends", userData, function(data) {
+				console.log("userData");
+				$.post(currentURL + "/api/friends", userData, function(data) {
 					console.log("working");
 
 				});
